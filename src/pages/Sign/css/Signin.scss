@@ -1,0 +1,48 @@
+.giris {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  color: #5d63076b;
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 300px;
+    width: 70%;
+    max-width: 500px;
+    margin-top: 30px;
+    .input {
+      border: 2px solid #5d63076b;
+      border-radius: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+      color: black;
+      &::placeholder {
+        color: black;
+      }
+    }
+    .buttons {
+      button {
+        background-color: #999016d7;
+        color: white;
+        padding: 3px 20px;
+        border-radius: 20px;
+        text-align: center;
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+        &:hover {
+          color: #999016d7;
+          background-color: rgba(255, 255, 255, 0.95);
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
